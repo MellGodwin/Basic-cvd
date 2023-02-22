@@ -257,10 +257,11 @@
 
 .banner h1{
     color: #ffa700;
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: 800;
     max-width: 5rem;
     line-height: 8rem;
+    text-align: center;
 }
 
 .banner .banner__wrapper{
@@ -274,12 +275,23 @@
     margin-bottom: 4rem;
 }
 
-.banner a{
+.banner .banner__text a{
     margin-top: 20rem;
 }
 
 .banner img{
     margin-left: 30rem;
+}
+
+@media screen and (max-width:500px){
+    .banner .banner__wrapper{
+        display: block;
+        text-align: center;
+        margin: auto auto auto;
+    }
+    .banner .banner__text{
+        margin-left: 0.5rem;
+    }
 }
 
 /*------------hm-services----------*/
@@ -331,9 +343,197 @@
     .banner img{
         display: block;
         margin-left: 0.5rem;
+        margin-top: 7rem;
     }
-    .banner .banner__wrapper{
+}
+
+/*-----------ABOUT----------*/
+
+.about{
+    background: #ffffff;
+}
+
+.about .about__wrapper h3{
+    color: #ffa700;
+    margin-left: 20rem;
+    font-size: 3rem;
+    margin-top: 15rem;
+}
+
+.about .about__wrapper p{
+    text-align: justify;
+    margin-left: 20rem;
+    max-width: 60rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+.about .about__wrapper img{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.about .about__wrapper{
+    display: flex;
+}
+
+@media screen and (max-width:500px){
+    .about .about__wrapper{
+        display: block;
+        text-align: justify;
+        margin: auto auto auto;
+    }
+    .about .about__text{
+        margin-left: -20rem;
+    }
+}
+
+/* ------ Latest Trends ------ */
+.latest{
+    background-color: #2b2b2b;
+    padding: 8rem 0;
+}
+
+.latest .latest__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5rem; 
+}
+.latest .latest__item{
+    background: #ffffff;
+    border-radius: 3rem;
+}
+.latest .latest__title h2{
+    color: #ffa700;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.latest .latest__item h4{
+    color: #ffa700;
+    margin: 4rem 1rem;
+}
+
+.latest .latest__item img{
+    width: 100%;
+    border-radius: 2rem;
+    margin-bottom: -4rem;
+}
+
+.latest .latest__item a{
+    color: #ffa700;
+    margin: 1rem;
+}
+
+.latest .latest__title p{
+    color: #ffffff;
+}
+
+.latest .latest__wrapper .latest__text{
+    padding: 2rem 0;
+    background-color:#ffffff;
+    color: #2b2b2b;
+    border-radius: 1rem;
+}
+
+.latest .latest__text p{
+    text-align: justify;
+    margin: 3rem 0;
+}
+.latest .latest__item{
+    background: #ffffff;
+    border-radius: 3rem;
+}
+.latest .latest__img{
+    width: 100%;
+}
+
+.latest .latest__item .latest__text{
+    padding: 2rem 1rem;
+}
+.latest .latest__item .latest__text h4{
+    color: #ffa700;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.latest .latest__item .latest__text p{
+    margin: 3rem 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.latest .latest__item .latest__text a{
+    color: #ffa700;
+}
+
+@media screen and (max-width:500px){
+    .latest{
+        display: block;
+        padding: 1rem;
+    }
+    .latest .latest__wrapper{
         display: block;
         text-align: center;
     }
+
+}
+.latest .latest__wrapper .latest__item{
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+}
+.latest .latest__wrapper .latest__item .latest__text{
+    text-align: justify;
+}
+.latest .latest__title h2{
+    font-size: 3rem;
+
+}
+.latest .latest__title p{
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+/* ------ Latest Trends ------ */
+.contact{
+    background: #ffa700;
+}
+.contact .contact__wrapper{
+    margin: 13rem 0;
+    align-items: center;
+}
+.contact h3{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.contact p{
+    text-align: center;
+    margin-top: rem;
+}
+.contact .contact__us a{
+    margin-left: 63rem;
+    margin-top: 4rem;
+}
+
+
+
+/*---------REPEATABLE PATTERNS--------------*/
+.btn{
+    padding: 1.2rem 1.5rem;
+    border-radius: 5rem;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.bg--yellow{
+    background: #ffa700;
+    color: #ffffff;
+}
+
+.bg--yellow:hover{
+    background: #2b2b2b;
+    border: 1px solid #ffa700;
+}
+
+.bg--dark{
+    background: #2b2b2b;
+    color: #ffffff;
 }
